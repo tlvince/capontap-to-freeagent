@@ -1,0 +1,53 @@
+{
+  "name": "@tlvince/capontap-to-freeagent",
+  "version": "1.0.0",
+  "description": "Convert a Capital on Tap CSV to FreeAgent",
+  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlvince/capontap-to-freeagent.git"
+  },
+  "keywords": [
+    "csv"
+  ],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com)",
+  "bugs": {
+    "url": "https://github.com/tlvince/capontap-to-freeagent/issues"
+  },
+  "homepage": "https://github.com/tlvince/capontap-to-freeagent#readme",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "neat-csv": "5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/plugin-transform-regenerator": "7.4.5",
+    "@babel/plugin-transform-runtime": "7.6.2",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-typescript": "7.6.0",
+    "@babel/runtime": "7.6.3",
+    "@types/jest": "24.0.19",
+    "@types/node": "12.11.5",
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/parser": "2.5.0",
+    "babel-jest": "24.9.0",
+    "eslint": "6.5.1",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.9.0",
+    "prettier": "1.18.2",
+    "typescript": "3.6.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

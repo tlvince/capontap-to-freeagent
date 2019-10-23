@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convert should handle a well-formed CSV 1`] = `
+"20/10/2019,-123.45,Waitrose
+18/10/2019,2.20,Amazon refund
+27/09/2019,0,Finance charge
+"
+`;
