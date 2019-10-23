@@ -1,5 +1,5 @@
 {
-  "name": "@tlvince/capontap-to-freeagent",
+  "name": "capontap-to-freeagent",
   "version": "1.0.0",
   "description": "Convert a Capital on Tap CSV to FreeAgent",
   "main": "dist/index.js",
@@ -47,8 +47,5 @@
     "jest": "24.9.0",
     "prettier": "1.18.2",
     "typescript": "3.6.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }

@@ -30,8 +30,13 @@ jobs:
         with:
           args: build
 
+      - name: 'Test: smoke'
+        uses: Borales/actions-yarn@1.1.0
+        with:
+          args: 'test:smoke'
+
       - name: Publish
         uses: mikeal/merge-release@2.2.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
