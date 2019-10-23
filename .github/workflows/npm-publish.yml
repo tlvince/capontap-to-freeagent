@@ -15,6 +15,16 @@ jobs:
         with:
           args: install
 
+      - name: Lint
+        uses: Borales/actions-yarn@1.1.0
+        with:
+          args: lint
+
+      - name: Test
+        uses: Borales/actions-yarn@1.1.0
+        with:
+          args: test
+
       - name: Build
         uses: Borales/actions-yarn@1.1.0
         with:

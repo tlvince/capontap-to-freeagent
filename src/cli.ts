@@ -10,5 +10,8 @@ process.stdin.on('data', data => {
 process.stdin.once('end', () => {
   convert(input)
     .then(res => process.stdout.write(res))
-    .catch(err => process.stderr.write(err))
+    .catch(error => {
+      console.error(error)
+      process.exit(1)
+    })
 })
