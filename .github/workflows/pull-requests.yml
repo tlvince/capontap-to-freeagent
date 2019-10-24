@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: gr2m/git-checkout-pull-request-action@master
+        uses: actions/checkout@v1
 
       - name: Install
         uses: Borales/actions-yarn@1.1.0
