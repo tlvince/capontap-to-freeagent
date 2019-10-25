@@ -1,4 +1,4 @@
-import neatCsv, { Row } from 'neat-csv'
+import neatCsv, { Row } from 'neat-csv' // eslint-disable-line import/default
 
 const freeAgentHeaders = ['Date', 'Amount', 'Description']
 
@@ -22,9 +22,9 @@ export const convert = async (csvLines: string): Promise<string> => {
   const rows = await neatCsv(csvLines)
   return rows
     .filter(isValid)
-    .filter(Boolean)
     .map(transform)
-    .reduce((acc, row) => {
-      return acc + freeAgentHeaders.map(header => row[header]).join(',') + '\n'
+    .reduce((acc, parsedRow: Row) => {
+      const row = freeAgentHeaders.map(header => parsedRow[header]).join(',')
+      return `${acc}${row}\n`
     }, '')
 }
