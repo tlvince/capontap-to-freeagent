@@ -7,9 +7,9 @@ update_configs:
       - dependencies
     automerged_updates:
       - match:
-          update_type: all
-          dependency_type: all
+        update_type: all
+        dependency_type: all
     allowed_updates:
       - match:
-          update_type: all
+        update_type: all
     version_requirement_updates: increase_versions
