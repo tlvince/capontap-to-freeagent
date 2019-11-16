@@ -16,8 +16,14 @@ jobs:
       - name: Lint
         run: yarn lint
 
+      - name: Test
+        run: yarn test
+
       - name: Build
         run: yarn build
+
+      - name: 'Test: smoke'
+        run: yarn test:smoke
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
