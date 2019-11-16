@@ -1,6 +1,6 @@
 {
   "name": "capontap-to-freeagent",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "Convert a Capital on Tap CSV to FreeAgent",
   "main": "dist/index.js",
   "bin": "dist/cli.js",
